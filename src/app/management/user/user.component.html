@@ -1,0 +1,39 @@
+<app-admin-dashboard></app-admin-dashboard>
+<div class="container">
+    <div class="row" style="margin-top: 100px">
+        <div class="col-2">
+        </div>
+        <div class="card col-10" style="background-color: antiquewhite">       
+            <h1 class="text-center">Customar List</h1>
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th> firstname</th>
+                        <th>lastname</th>
+                        <th>cell</th>
+                        <th>email</th>
+                        <th>password</th>
+
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let l of userList ">
+                        <td>#{{l.id}}</td>
+                        <td>{{l.firstname}}</td>
+                        <td>{{l.lastname}}</td>
+                        <td>{{l.cell}}</td>
+                        <td>{{l.email}}</td>
+                        <td>{{l.password}}</td>
+                        
+                        <td>
+                            <!-- <button class="btn btn-success" (click)="updateUser(l.id)">See More</button>  -->
+                            <!-- <button class="btn btn-danger" (click)="deleteLocation(l.lid)">Delete</button> -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> 

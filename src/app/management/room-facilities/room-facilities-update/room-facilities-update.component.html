@@ -1,0 +1,22 @@
+<app-admin-dashboard></app-admin-dashboard>
+<div class="container">
+    <div class="row" style="margin-top: 100px">
+        <div class="col-4">
+        </div>
+        <div class="card col-6" style="background-color: antiquewhite">
+            <h1 class="text-center">Add Room Facilities</h1>
+            <form (ngSubmit)="roomFacilitiesUpdate()">
+                <div class="row p-3">
+                    <input type="text" class="form-control" name="hfacname" placeholder="Facilities"
+                        [(ngModel)]="rf.rfname"><br><br>
+                    <input type="text" class="form-control" name="hfacdiscription" placeholder="Description"
+                        [(ngModel)]="rf.rfdescription">
+                </div>
+                <div class="p-3 d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button class="btn btn-primary me-md-2">Update</button>
+                    <button class="btn btn-danger" (click)="deleteFaci()">Delete</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
